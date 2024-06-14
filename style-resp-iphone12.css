@@ -1,0 +1,66 @@
+@media (max-width: 415px){
+    .topo1{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 16px 0;
+        margin: 0;
+        gap: 0;
+
+    }
+
+    .caixatext{
+        /* border: 1px solid red; */
+
+    }
+
+    .caixatext .info-time{
+        font-size: 12px;
+        /* border: 1px solid blue; */
+
+    }
+
+    .caixa-timelsi{
+        /* border: 1px solid green; */
+        width: 100%;
+
+    }
+
+    .caixa-timelsi .timelsi{
+        /* border: 1px solid red; */
+    }
+
+    .ndt{
+        display: grid;
+
+    }
+
+    .logo-pndt{
+        margin: 0 auto;
+    }
+
+    .ndt h2{
+        display: none;
+    }
+
+    .ndt p{
+        text-align: center;
+    }
+
+    .igniscope{
+        display: grid;
+
+    }
+
+    .logo-pigniscope{
+        margin: 0 auto;
+    }
+
+    .igniscope h2{
+        margin: 16px auto;
+    }
+
+    .igniscope p{
+        text-align: center;
+    }
+}
