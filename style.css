@@ -359,6 +359,10 @@ main{
     width: 100%;
 }
 
+.devs .dave, .rick, .arthur, .caio{
+    gap: 8px;
+}
+
 .devs .info-devs .perfil-dev {
     width: 200px;
     border-radius: 50%;
