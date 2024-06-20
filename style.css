@@ -191,16 +191,17 @@ main{
 
 }
 .caixa-timelsi{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     /* border: 1px solid green; */
-    width: 45%;
+    width: 40rem;
 }
 
 .timelsi{
     max-width: 100%;
     height: auto;
-    border-radius: 15%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px #16409459;
     /* border: 1px solid red; */
 }
 
@@ -315,6 +316,8 @@ main{
 /*FIM DOS PROJETOS*/
 .devs{
 
+    margin: 40px 0;
+
 }
 
 .box-members{
@@ -323,6 +326,7 @@ main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .member{
@@ -331,19 +335,33 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    width: 12.5rem;
+    max-width: 18.75rem;
     
 }
 
 .photo-member{
     width: auto;
-    height: 14rem;
+    height: 13rem;
     border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 .info{
     width: 100%;
-    height: 6rem;
+    height: auto;
+    /* max-height: 12rem; */
+    /* display: grid; */
+    /* gap: 0.5rem; */
+    /* border: 1px solid red; */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.info-flexivel{
+    width: 100%;
+    height: 8rem;
     /* max-height: 12rem; */
     display: grid;
     gap: 0.5rem;
@@ -352,15 +370,7 @@ main{
     position: relative;
 }
 
-.info.active{
-    height: auto;
-}
-
-.info.active::before{
-    visibility: hidden;
-}
-
-.info::before{
+.info-flexivel::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -368,6 +378,15 @@ main{
     height: 1rem;
     background: linear-gradient(transparent,#fff );
 
+}
+
+.info-flexivel.active::before{
+    visibility: hidden;
+}
+
+.active{
+    height: auto;
+    /* box-shadow: 1px 1px 9px  #164194; */
 }
 
 #idReadMore{
@@ -407,7 +426,7 @@ main{
     /* max-width: 15ch */
     /* max-height: 6ch; */
     /* overflow: hidden; */
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     /* white-space: nowrap; */
 
 }
@@ -417,11 +436,106 @@ main{
 }
 
 .linkedin, .github{
+    width: 2rem;
+    margin: 0.5rem;
+    transition: .2s;
 
+}
+
+.linkedin:hover, .github:hover{
+    transform: scale(1.30);
 }
 
 /*FIM DOS DESENVOLVEDORES*/
 
+.loc-lab{
+    /* border: 1px solid purple; */
+
+}
+
+.box-title-loc-lab{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    position: relative;
+    
+
+}
+
+.boxh1{
+    /* border: 1px solid red; */
+    width: 30%;
+    margin: 0 2rem;
+
+}
+
+.boxh1 h1{
+    /* background-color: #164194; */
+    text-align: end;
+    font-size: 1.5rem;
+
+}
+
+.boxhr{
+    /* border: 1px solid green; */
+    width: 65%;
+    position: relative;
+
+
+}
+
+.boxhr hr{
+    border-color: #164194;
+    /* rotate: 15deg; */
+    width: 100%;
+    top:50%;
+    position: absolute;
+    /* display: flex; */
+    /* align-items: center; */
+
+}
+
+
+.box-info-location{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.info-location{
+    /* border: 1px solid red; */
+    padding: 16px;
+}
+
+.location, .adress{
+    /* border: 1px solid red; */
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.opening-hours{
+    display: flex;
+    justify-content: space-between;
+}
+
+.days, .hours{
+    font-size: 1.5rem;
+}
+
+.days{
+
+}
+
+.hours{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* FIM DA LOCALIZACAO DO LAB */
 footer{
     height: 6rem;
     background-color: white;

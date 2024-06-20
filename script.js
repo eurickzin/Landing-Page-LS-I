@@ -1,7 +1,7 @@
 var button = document.getElementById('idReadMore');
 
 button.addEventListener('click', function() {
-    var info = document.querySelector('.info');
+    var info = document.querySelector('.info-flexivel');
     info.classList.toggle('active');
 
     if (info.classList.contains('active')){
