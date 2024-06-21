@@ -291,76 +291,157 @@ main{
 
 /*FIM DOS PROJETOS*/
 .devs{
-
     margin: 40px 0;
-
-}
-
-.box-members{
-
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.member{
-    /* border: 1px solid black; */
-    /* height: 25rem; */
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    /* border: 1px solid red; */
+
+}
+
+.box-prof{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+}
+
+.box-prof .member-prof{
+    background-color: #164194;
+    width: 50%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 12.5rem;
-    max-width: 18.75rem;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+
+}
+
+.box-prof .photo-member-prof{
+    width: auto;
+    height: 70%;
+    border-radius: 50%;
+
+}
+
+.box-prof .info-flexivel{
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.box-prof .member-position-prof{
+    color: white;
+    text-align: center;
+}
+
+.box-prof .description-prof{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.links-prof{
+    /* border: 1px solid red; */
+}
+
+.links-prof a{
+}
+
+.links-prof img{
+
+
+
+}
+.box-members{
+
+    /* background-color: #164194; */
+    width: 100%;
+    /* border: 10px solid red; */
+    display: flex;
+    /* gap: 1rem 1rem; */
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box-members .member{
+    background-color: #164194;
+    /* border: 3px solid red; */
+    width: 35%;
+    height: 10rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 25px;
+    /* gap: 1rem; */
+    /* margin: auto auto; */
+    /* padding: 1rem; */
     
 }
 
 .photo-member{
+    /* border: 1px solid red; */
     width: auto;
-    height: 13rem;
+    height: 70%;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .info{
-    width: 100%;
-    height: auto;
-    /* max-height: 12rem; */
-    /* display: grid; */
-    /* gap: 0.5rem; */
     /* border: 1px solid red; */
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
 }
 
-.info-flexivel{
-    width: 100%;
-    height: 8rem;
-    /* max-height: 12rem; */
-    display: grid;
-    gap: 0.5rem;
+.member-position{
+    /* border: 1px solid green; */
+    text-align: center;
+    color: white;
+
+}
+
+.description{
+    /* border: 1px solid yellow; */
+    text-align: center;
+    color: white;
+    /* max-width: 15ch */
+    /* max-height: 6ch; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+}
+
+.links{
     /* border: 1px solid red; */
-    overflow: hidden;
-    position: relative;
-    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.info-flexivel::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1rem;
-    background: linear-gradient(transparent,#fff );
+.linkedin, .github{
+    width: 2rem;
+    /* margin: 0.5rem; */
     transition: .2s;
 
 }
 
-.info-flexivel.active::before{
+.linkedin:hover, .github:hover{
+    transform: scale(1.30);
+}
+
+
+/* .info-flexivel.active::before{
     visibility: hidden;
-}
+} */
 
 .active{
     height: auto;
@@ -394,35 +475,11 @@ main{
     transition: all 0.5s ease-in-out;
 }
 
-.member-position{
-    text-align: center;
 
-}
 
-.description{
-    text-align: center;
-    /* max-width: 15ch */
-    /* max-height: 6ch; */
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
 
-}
 
-.links{
-    /* border: 1px solid red; */
-}
 
-.linkedin, .github{
-    width: 2rem;
-    margin: 0.5rem;
-    transition: .2s;
-
-}
-
-.linkedin:hover, .github:hover{
-    transform: scale(1.30);
-}
 
 /*FIM DOS DESENVOLVEDORES*/
 
