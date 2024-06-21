@@ -8,17 +8,20 @@
 
 body{
     background-color: #c2c2c2ab;
-    
+    display: grid
 
 }
 .wrapper{
-    width: 100vw;
+    width: 100%;
+    display: grid;
+    justify-content: center;
 }
 
 header {
-    background-color: #fff;
+    width: 100%;
+    background: linear-gradient(to right, #fff 50%,#164194 50%);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 6rem;
     border-bottom: 2px solid #e8e8e8;
     align-items: center;
@@ -26,7 +29,22 @@ header {
     top: 0;
     z-index: 1002;
     overflow: hidden;
+    /* border: 4px solid orangered; */
 }
+
+.container-topo{
+    /* opacity: 0; */
+    background-color: #fff;
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid yellow; */
+    margin: 0 auto;
+    position: absolute;
+
+}
+
+
 
 .header-responsive {
     display: none;
@@ -45,22 +63,26 @@ nav {
 .box-logo-header {
     margin-left: 80px;
     margin-right: 30px;
+    position: relative;
+    background-color: #fff;
+    /* border: 1px solid red; */
 }
 
 .logoLSI {
-    width: 150px;
-    margin: 0 20px;
+    width: 180px;
+    /* margin: 0 20px; */
     /* border: 1px solid red; */
 }
 
 .azulclaro {
     background-color: #0095DB;
     display: block;
-    width: 20px;
-    height: 120%;
+    width: 15px;
+    height: 120px;
     rotate: 6deg;
     position: absolute;
-    left: 290px;
+    top: -20px;
+    left: 205px;
 }
 
 ul {
@@ -71,6 +93,7 @@ ul {
     justify-content: space-around;
     font-size: 20px;
     background-color: #164194;
+    /* border: 10px solid green; */
 }
 
 li {
@@ -92,70 +115,18 @@ li:hover {
     }
 }
 
-@media (max-width: 650px) {
-    header {
-        display: flex;
-        justify-content: center;
-    }
-
-    .header-responsive {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #164194;
-        height: 4rem;
-        border-bottom: 2px solid #e8e8e8;
-        position: sticky;
-        top: 6rem;
-        z-index: 1002;
-        overflow: hidden;
-    }
-
-    .ul-responsiva{
-        /* border: 1px solid red; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .li-responsiva{
-        color: white;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .box-logo-header {
-        margin: 0 auto;
-    }
-
-    .logoLSI {
-        margin: 0 auto;
-    }
-
-    .azulclaro {
-        display: none;
-    }
-
-    ul {
-        display: none;
-    }
-}
-
-
-
 /*FIM DA NAV BAR*/
 
 main{
     background-color: white;
     width: 1280px;
-    max-width: 80%;
+    /* max-width: 80%; */
     display: block;
     margin: 0 auto;
     padding: 0 24px;
     border-bottom:2px solid #e8e8e8;
     z-index: 2;
+    position: relative;
     
 }
 
@@ -373,6 +344,7 @@ main{
     /* border: 1px solid red; */
     overflow: hidden;
     position: relative;
+    transition: .2s;
 }
 
 .info-flexivel::before{
@@ -382,6 +354,7 @@ main{
     width: 100%;
     height: 1rem;
     background: linear-gradient(transparent,#fff );
+    transition: .2s;
 
 }
 
