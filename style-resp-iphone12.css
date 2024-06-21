@@ -1,0 +1,122 @@
+@media (max-width: 1280px){
+
+    main{
+        width: 100%;
+    }
+
+    .topo1{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .info-box1{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+
+    }
+
+    .caixatext{
+        width: 100%;
+    }
+
+    .info-time{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .caixacopy{
+        width: 100%;
+    }
+
+    .copy{
+        width: 100%;
+    }
+
+    .caixa-timelsi{
+        width: 100%;
+    }
+
+    /* FIM TOPO DO SITE */
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ndt{
+        width: 80%;
+        height: 200px;
+    }
+
+    .igniscope{
+        width: 80%;
+        height: 200px;
+    }
+
+    /* FIM PROJETOS */
+    
+    .box-prof{
+        /* border: 1px solid red; */
+    }
+
+    .member-prof{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20rem !important;
+        height: 35rem !important;
+        margin: 0;
+        /* min-width: 100%; */
+        /* border: 10px solid green; */
+    }
+
+    .photo-member-prof{
+        width: 80% !important;
+        height: auto !important;
+    }
+
+    .box-members{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .member{
+        /* border: 3px solid red; */
+        height: 30rem !important;
+        width: 25rem !important;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .photo-member{
+
+        width: 80%;
+        height: auto;
+    }
+
+    .info{
+
+    }
+
+    .member-position{
+
+    }
+
+    .member-description{
+
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}

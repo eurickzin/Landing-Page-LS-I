@@ -166,12 +166,11 @@ main{
     /* display: flex; */
     /* justify-content: center; */
     /* border: 1px solid green; */
-    width: 40rem;
+    width: 45%;
 }
 
 .timelsi{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 0px #16409459;
     /* border: 1px solid red; */
@@ -181,6 +180,7 @@ main{
     text-align: center;
     align-items: start;
     margin: 0 20px;
+    font-size: 1rem;
     /* border: 1px solid red; */
 }
 
