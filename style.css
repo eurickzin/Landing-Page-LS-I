@@ -428,7 +428,7 @@ main{
 
 .boxh1{
     /* border: 1px solid red; */
-    width: 30%;
+    width: 45%;
     margin: 0 2rem;
 
 }
@@ -442,7 +442,7 @@ main{
 
 .boxhr{
     /* border: 1px solid green; */
-    width: 65%;
+    width: 55%;
     position: relative;
 
 
